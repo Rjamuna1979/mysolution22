@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency Alert Dashboard</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+  <!-- Banner -->
+  <header style="background-color: darkred; color: white; padding: 20px; text-align: center;">
+    <h1 style="margin: 0;">Springfield Emergency Alert Dashboard</h1>
+    <p style="margin: 10px 0;">Current Alert Level:</p>
+    <meter min="0" max="5" value="4" style="width: 50%; height: 20px;"></meter>
+  </header>
+
+  <!-- Main Content -->
+  <main style="display: flex; flex-wrap: wrap; padding: 20px;">
+ <!-- Alerts Section -->
+    <section style="flex: 2; margin-right: 20px;">
+      <article style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
+        <h2 class="alert-title" style="color: darkred;">Flood Warning</h2>
+        <time datetime="2025-07-15T09:00">July 15, 2025 - 9:00 AM</time>
+        <p class="alert-desc">Heavy rainfall expected to continue through the evening, causing potential flooding in low-lying areas.</p>
+        <span class="category-label" style="font-weight: bold;">Category: Flood</span>
+        <div class="what-to-do" style="margin-top: 10px;">
+          <h3>What To Do</h3>
+          <ul>
+            <li>Stay indoors</li>
+            <li>Avoid low-lying areas</li>
+            <li>Do not drive through flooded roads</li>
+          </ul>
+        </div>
+      </article>
+ <article style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px;">
+        <h2 class="alert-title" style="color: darkorange;">Wildfire Risk</h2>
+        <time datetime="2025-07-14T15:00">July 14, 2025 - 3:00 PM</time>
+        <p class="alert-desc">Dry conditions and high winds increase the risk of wildfires in the region.</p>
+        <span class="category-label" style="font-weight: bold;">Category: Fire</span>
+        <div class="what-to-do" style="margin-top: 10px;">
+          <h3>What To Do</h3>
+          <ul>
+            <li>Avoid outdoor burning</li>
+            <li>Report smoke sightings</li>
+            <li>Prepare evacuation plan</li>
+          </ul>
+        </div>
+      </article>
+<article style="border: 1px solid #ccc; padding: 15px;">
+        <h2 class="alert-title" style="color: darkgreen;">Air Quality Advisory</h2>
+        <time datetime="2025-07-13T08:00">July 13, 2025 - 8:00 AM</time>
+        <p class="alert-desc">Smoke from nearby fires is affecting air quality. Sensitive groups should take precautions.</p>
+        <span class="category-label" style="font-weight: bold;">Category: Air Quality</span>
+        <div class="what-to-do" style="margin-top: 10px;">
+          <h3>What To Do</h3>
+          <ul>
+            <li>Wear masks outdoors</li>
+            <li>Use air purifiers</li>
+            <li>Limit outdoor activity</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+<!-- Aside Section -->
+    <aside style="flex: 1; border-left: 2px solid #ddd; padding-left: 20px;">
+      <section class="contact-info" style="margin-bottom: 30px;">
+        <h3>City Contact Info</h3>
+        <p><strong>Emergency:</strong> 911</p>
+        <p><strong>Non-Emergency:</strong> (555) 123-4567</p>
+        <p><strong>Local Shelter:</strong> Springfield High School Gymnasium</p>
+      </section>
+
+      <section class="citizen-input">
+        <h3>Report Local Issues</h3>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" style="width: 100%; margin-bottom: 10px;"><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" style="width: 100%; margin-bottom: 10px;"><br>
+
+          <label for="issue">Issue Description:</label><br>
+          <textarea id="issue" name="issue" rows="4" style="width: 100%; margin-bottom: 10px;"></textarea><br>
+
+          <input type="checkbox" id="followup" name="followup">
+          <label for="followup"> Request a follow-up call</label><br><br>
+<button type="submit">Submit</button>
+        </form>
+      </section>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color: #f2f2f2; text-align: center; padding: 15px;">
+    <img src="city-logo.png" alt="City Logo" style="height: 40px; vertical-align: middle;">
+    <span style="margin-left: 10px;">© Springfield - <time datetime="2025-07-15">July 15, 2025</time></span> |
+    <a href="alert-bulletin.pdf" download style="margin-left: 10px;">Download Alert Bulletin</a>
+  </footer>
+
+</body>
+</html>
